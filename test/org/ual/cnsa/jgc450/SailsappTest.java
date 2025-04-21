@@ -44,6 +44,8 @@ public class SailsappTest {
     	ChromeOptions chromeOptions = new ChromeOptions();
     	if (headless) chromeOptions.setHeadless(headless);
     	chromeOptions.addArguments("window-size=1920,1080");
+      chromeOptions.addArguments("--no-sandbox");
+      chromeOptions.addArguments("--remote-debugging-port=9222");
     	driver = new ChromeDriver(chromeOptions);
     	break;
     default:
