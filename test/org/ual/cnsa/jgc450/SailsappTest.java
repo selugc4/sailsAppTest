@@ -31,10 +31,11 @@ public class SailsappTest {
 
     switch (browser) {
     case 0:
+      System.getProperty("webdriver.gecko.driver");
     	//System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
     	FirefoxOptions firefoxOptions = new FirefoxOptions();
     	if (headless) firefoxOptions.setHeadless(headless);
-    	//driver = new FirefoxDriver(firefoxOptions);
+    	driver = new FirefoxDriver(firefoxOptions);
 
     	break;
     case 1: 
