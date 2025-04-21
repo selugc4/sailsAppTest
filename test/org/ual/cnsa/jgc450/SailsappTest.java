@@ -31,14 +31,14 @@ public class SailsappTest {
 
     switch (browser) {
     case 0:
-    	System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
+    	//System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
     	FirefoxOptions firefoxOptions = new FirefoxOptions();
     	if (headless) firefoxOptions.setHeadless(headless);
     	driver = new FirefoxDriver(firefoxOptions);
 
     	break;
     case 1: 
-    	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+    	//System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	if (headless) chromeOptions.setHeadless(headless);
     	chromeOptions.addArguments("window-size=1920,1080");
