@@ -178,7 +178,7 @@ public class SailsappTest {
     // 17 | if | ${navigatoruserAgent}.includes("Firefox") | 
     if ((Boolean) js.executeScript("return (arguments[0].includes(\'Firefox\'))", vars.get("navigatoruserAgent"))) {
       // 18 | assert | message | Introduzca una dirección de correo.
-      assertEquals(vars.get("message").toString(), "Introduzca una dirección de correo.");
+      assertEquals(vars.get("message").toString(), "Please enter an email address.");
       // 19 | end |  | 
     }
     // 20 | type | id=email-address | ${emailrandom}.com
