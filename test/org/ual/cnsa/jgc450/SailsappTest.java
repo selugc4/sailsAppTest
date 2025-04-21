@@ -39,7 +39,7 @@ public class SailsappTest {
 
     	break;
     case 1: 
-      System.getProperty("webdriver.gecko.driver");
+      System.getProperty("webdriver.chrome.driver");
     	//System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	if (headless) chromeOptions.setHeadless(headless);
