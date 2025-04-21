@@ -191,6 +191,11 @@ public class SailsappTest {
     emailInput.sendKeys(vars.get("emailrandom").toString()+".com");
     // 21 | click | css=.button-text | 
     driver.findElement(By.cssSelector(".button-text")).click();
+    try {
+      Thread.sleep(500);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     // 22 | assertText | css=.row:nth-child(5) strong | ${emailrandom}.com
     assertThat(driver.findElement(By.cssSelector(".row:nth-child(5) strong")).getText(), is(vars.get("emailrandom").toString()+".com"));
     // 23 | click | id=header-account-menu-link | 
