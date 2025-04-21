@@ -26,7 +26,7 @@ public class SailsappTest {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    int browser= 0; 
+    int browser= Integer.parseInt(System.getProperty("browser", "0"));; 
     Boolean headless = true;
 
     switch (browser) {
@@ -39,6 +39,7 @@ public class SailsappTest {
 
     	break;
     case 1: 
+      System.getProperty("webdriver.gecko.driver");
     	//System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	if (headless) chromeOptions.setHeadless(headless);
