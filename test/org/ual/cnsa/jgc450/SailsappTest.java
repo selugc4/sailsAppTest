@@ -176,7 +176,7 @@ public class SailsappTest {
     // 14 | if | ${navigatoruserAgent}.includes("Chrome") | 
     if ((Boolean) js.executeScript("return (arguments[0].includes(\'Chrome\'))", vars.get("navigatoruserAgent"))) {
       // 15 | assert | message | Incluye un signo "@" en la dirección de correo electrónico. La dirección "jgc450" no incluye el signo "@".
-      assertEquals(vars.get("message").toString(), "Incluye un signo \"@\" en la dirección de correo electrónico. La dirección \"jgc450\" no incluye el signo \"@\".");
+      assertEquals(vars.get("message").toString(), "Please include an \"@\" in the email address. \"jgc450\" is missing an \"@\".");
       // 16 | end |  | 
     }
     // 17 | if | ${navigatoruserAgent}.includes("Firefox") | 
