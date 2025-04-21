@@ -34,7 +34,7 @@ public class SailsappTest {
     	//System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
     	FirefoxOptions firefoxOptions = new FirefoxOptions();
     	if (headless) firefoxOptions.setHeadless(headless);
-    	driver = new FirefoxDriver(firefoxOptions);
+    	//driver = new FirefoxDriver(firefoxOptions);
 
     	break;
     case 1: 
