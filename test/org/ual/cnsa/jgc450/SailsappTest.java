@@ -26,8 +26,8 @@ public class SailsappTest {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    int browser= 1; 
-    Boolean headless = false;
+    int browser= 0; 
+    Boolean headless = true;
 
     switch (browser) {
     case 0:
